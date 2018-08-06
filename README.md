@@ -128,7 +128,7 @@ function listEnumeratorsAsyncWithMandant:(NSString*) mandant
     EnumerationTypeEnum type = PROJECT;
     NSString* parentProject = @"parentProject";
     NSString* xPage = @"x-page";
-    NSNumber* xPageSize = 213;
+    NSNumber* xPageSize = 129;
 
     [self.clik listEnumeratorsAsyncWithMandant: mandant type : type parentProject : parentProject xPage : xPage xPageSize : xPageSize  completionBlock:^(BOOL success, HttpContext* context, NSArray<Enumerator> * response, NSError* error) { 
        //Add code here
@@ -225,9 +225,9 @@ Must be set explicitly to false for performance reasons. |
     // Parameters for the API call
     NSString* mandant = @"mandant";
     EnumerationTypeEnum enumeratorType = PROJECT;
-    BOOL combinationConstraints = false;
+    BOOL combinationConstraints = true;
     NSString* xPage = @"x-page";
-    NSNumber* xPageSize = 49;
+    NSNumber* xPageSize = 129;
 
     [self.clik getReadConstraintsForASingleEnumeratorAsyncWithMandant: mandant enumeratorType : enumeratorType combinationConstraints : combinationConstraints xPage : xPage xPageSize : xPageSize  completionBlock:^(BOOL success, HttpContext* context, NSArray<EnumeratorConstraints> * response, NSError* error) { 
        //Add code here
@@ -276,7 +276,7 @@ function getReadConstraintsForASingleEnumeratorAsyncWithMandant:(NSString*) mand
     NSString* mandant = @"mandant";
     EnumerationTypeEnum enumeratorType = PROJECT;
     NSString* enumeratorId = @"enumeratorId";
-    NSNumber* combinationConstraints = false;
+    NSNumber* combinationConstraints = true;
 
     [self.clik getReadConstraintsForASingleEnumeratorAsyncWithMandant: mandant enumeratorType : enumeratorType enumeratorId : enumeratorId combinationConstraints : combinationConstraints  completionBlock:^(BOOL success, HttpContext* context, EnumeratorConstraints* response, NSError* error) { 
        //Add code here
@@ -328,7 +328,7 @@ function listEntriesAsyncWithMandant:(NSString*) mandant
     NSArray<NSNumber*>* status = @[draft,draft,draft];
     NSString* startDate = @"startDate";
     NSString* xPage = @"x-page";
-    NSNumber* xPageSize = 49;
+    NSNumber* xPageSize = 129;
 
     [self.clik listEntriesAsyncWithMandant: mandant status : status startDate : startDate xPage : xPage xPageSize : xPageSize  completionBlock:^(BOOL success, HttpContext* context, NSArray<Entry> * response, NSError* error) { 
        //Add code here
