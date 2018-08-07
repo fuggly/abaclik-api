@@ -26,7 +26,7 @@
 /**
 * TODO: Write general description for this field
 */
-@property NSObject* mid;
+@property NSObject* identifier;
 
 /**
 * TODO: Write general description for this field

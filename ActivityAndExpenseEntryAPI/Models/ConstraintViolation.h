@@ -35,7 +35,7 @@
 /**
 * Property name or an array index
 */
-@property NSObject* mproperty;
+@property NSObject* propertyDescriptor;
 
 /**
 * a list of nested violations, relative to the specified property

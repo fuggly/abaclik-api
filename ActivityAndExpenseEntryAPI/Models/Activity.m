@@ -11,12 +11,12 @@
 /**
 * ISO 8601:2004 date and time in UTC or with a specific offset
 */
-@synthesize start;
+@synthesize startDate;
 
 /**
 * ISO 8601:2004 date and time in UTC or with a specific offset
 */
-@synthesize mend;
+@synthesize endDate;
 
 /**
 * ISO 8601:2004 date
@@ -77,8 +77,8 @@
 {
     NSMutableDictionary* map = [[NSMutableDictionary alloc] init];
     [map addEntriesFromDictionary: @{
-        @"start": @"start",
-        @"end": @"mend",
+        @"start": @"startDate",
+        @"end": @"endDate",
         @"date": @"date",
         @"duration": @"duration",
         @"project": @"project",

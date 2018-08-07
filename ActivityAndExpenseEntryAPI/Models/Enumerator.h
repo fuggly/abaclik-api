@@ -22,7 +22,7 @@
 /**
 * TODO: Write general description for this field
 */
-@property NSString* mid;
+@property NSString* identifier;
 
 /**
 * TODO: Write general description for this field

@@ -25,12 +25,12 @@
 /**
 * ISO 8601:2004 date and time in UTC or with a specific offset
 */
-@property NSString* start;
+@property NSString* startDate;
 
 /**
 * ISO 8601:2004 date and time in UTC or with a specific offset
 */
-@property NSString* mend;
+@property NSString* endDate;
 
 /**
 * ISO 8601:2004 date

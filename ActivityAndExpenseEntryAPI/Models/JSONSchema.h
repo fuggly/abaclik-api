@@ -36,12 +36,12 @@
 /**
 * TODO: Write general description for this field
 */
-@property NSArray* menum;
+@property NSArray* enumType;
 
 /**
 * TODO: Write general description for this field
 */
-@property NSNumber* nullable;
+@property NSNumber* isNullable;
 
 /**
 * TODO: Write general description for this field
@@ -51,12 +51,12 @@
 /**
 * TODO: Write general description for this field
 */
-@property NSString* mconst;
+@property NSString* constantValue;
 
 /**
 * TODO: Write general description for this field
 */
-@property NSString* mdefault;
+@property NSString* defaultValue;
 
 /**
 * TODO: Write general description for this field

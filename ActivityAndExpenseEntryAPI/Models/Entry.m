@@ -11,7 +11,7 @@
 /**
 * TODO: Write general description for this method
 */
-@synthesize mid;
+@synthesize identifier;
 
 /**
 * TODO: Write general description for this method
@@ -77,7 +77,7 @@
 {
     NSMutableDictionary* map = [[NSMutableDictionary alloc] init];
     [map addEntriesFromDictionary: @{
-        @"id": @"mid",
+        @"id": @"identifier",
         @"type": @"type",
         @"creationDate": @"creationDate",
         @"modificationDate": @"modificationDate",

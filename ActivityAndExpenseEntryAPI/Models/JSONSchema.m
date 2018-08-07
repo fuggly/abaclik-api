@@ -21,12 +21,12 @@
 /**
 * TODO: Write general description for this method
 */
-@synthesize menum;
+@synthesize enumType;
 
 /**
 * TODO: Write general description for this method
 */
-@synthesize nullable;
+@synthesize isNullable;
 
 /**
 * TODO: Write general description for this method
@@ -36,12 +36,12 @@
 /**
 * TODO: Write general description for this method
 */
-@synthesize mconst;
+@synthesize constantValue;
 
 /**
 * TODO: Write general description for this method
 */
-@synthesize mdefault;
+@synthesize defaultValue;
 
 /**
 * TODO: Write general description for this method
@@ -158,11 +158,11 @@
     [map addEntriesFromDictionary: @{
         @"type": @"type",
         @"description": @"description",
-        @"enum": @"menum",
-        @"nullable": @"nullable",
+        @"enum": @"enumType",
+        @"nullable": @"isNullable",
         @"format": @"format",
-        @"const": @"mconst",
-        @"default": @"mdefault",
+        @"const": @"constValue",
+        @"default": @"defaultValue",
         @"minLength": @"minLength",
         @"maxLength": @"maxLength",
         @"pattern": @"pattern",

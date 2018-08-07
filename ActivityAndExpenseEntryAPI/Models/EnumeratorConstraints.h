@@ -43,12 +43,12 @@
 /**
 * TODO: Write general description for this field
 */
-@property NSDictionary<JSONSchema>* entrySchemes;
+@property id<JSONSchema> entrySchemes;
 
 /**
 * maps another EnumerationType to a restriction rule
 */
-@property NSDictionary<CombinationConstraintEntry>* combinationConstraints;
+@property id<CombinationConstraintEntry> combinationConstraints;
 
 
 /**

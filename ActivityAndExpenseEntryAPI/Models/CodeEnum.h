@@ -13,7 +13,7 @@ enum CodeEnum
         CodeH, //TODO: Write general description for this method
         CodeMin, //TODO: Write general description for this method
         CodeKm, //TODO: Write general description for this method
-        CodeEnum1, //TODO: Write general description for this method
+        Code1, //TODO: Write general description for this method
 };
 
 #endif

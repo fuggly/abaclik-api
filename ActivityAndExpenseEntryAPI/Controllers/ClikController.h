@@ -77,7 +77,7 @@ typedef void (^CompletedGetReadConstraintsForASingleEnumerator)(BOOL success, Ht
 
 /**
 * Completion block definition for asynchronous call to Read constraints for a single enumerator */
-typedef void (^CompletedGetReadConstraintsForASingleEnumerator)(BOOL success, HttpContext* context, EnumeratorConstraints* response, NSError* error);
+//typedef void (^CompletedGetReadConstraintsForASingleEnumerator)(BOOL success, HttpContext* context, EnumeratorConstraints* response, NSError* error);
 
 /**
 * Read constraints for a single enumerator

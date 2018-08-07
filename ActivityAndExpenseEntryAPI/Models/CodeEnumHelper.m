@@ -27,7 +27,7 @@
         case CodeKm:
             return @"km";
 
-        case CodeEnum1:
+        case Code1:
             return @"1";
 
         default:

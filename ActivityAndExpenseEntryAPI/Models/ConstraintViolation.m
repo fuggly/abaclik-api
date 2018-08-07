@@ -21,7 +21,7 @@
 /**
 * Property name or an array index
 */
-@synthesize mproperty;
+@synthesize propertyDescriptor;
 
 /**
 * a list of nested violations, relative to the specified property
@@ -68,7 +68,7 @@
     [map addEntriesFromDictionary: @{
         @"severity": @"severity",
         @"message": @"message",
-        @"property": @"mproperty",
+        @"property": @"propertyDescriptor",
         @"violations": @"violations"  
     }];
 
