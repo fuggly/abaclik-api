@@ -29,6 +29,7 @@
 * TODO: Write general description for this field
 */
 @property enum EnumerationTypeEnum enumeratorType;
+@property NSString* enumeratorTypeString;
 
 /**
 * TODO: Write general description for this field

@@ -39,6 +39,7 @@
 -(void)setCodeWithNSString:(NSString*) strValue
 {
     code = [CodeEnumHelper codeEnumFromString:(NSString*) strValue];
+  _codeString = strValue;
 }
 
 

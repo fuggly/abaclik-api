@@ -35,11 +35,13 @@
 * input format specifier
 */
 @property enum InputFormatEnum inputFormat;
+@property NSString* inputFormatString;
 
 /**
 * TODO: Write general description for this field
 */
 @property enum SubTypeEnum subType;
+@property NSString* subTypeString;
 
 /**
 * TODO: Write general description for this field

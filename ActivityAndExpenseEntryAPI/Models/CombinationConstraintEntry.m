@@ -35,6 +35,7 @@
 -(void)setAllowWithNSString:(NSString*) strValue
 {
     allow = [AllowEnumHelper allowEnumFromString:(NSString*) strValue];
+  _allowString = strValue;
 }
 
 

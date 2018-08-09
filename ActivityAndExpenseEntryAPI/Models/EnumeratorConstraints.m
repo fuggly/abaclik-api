@@ -50,6 +50,7 @@
 -(void)setEnumeratorTypeWithNSString:(NSString*) strValue
 {
     enumeratorType = [EnumerationTypeEnumHelper enumerationTypeEnumFromString:(NSString*) strValue];
+  _enumeratorTypeString = strValue;
 }
 
 

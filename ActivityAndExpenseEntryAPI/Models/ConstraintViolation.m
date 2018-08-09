@@ -54,6 +54,7 @@
 -(void)setSeverityWithNSString:(NSString*) strValue
 {
     severity = [SeverityEnumHelper severityEnumFromString:(NSString*) strValue];
+  _severityString = strValue;
 }
 
 

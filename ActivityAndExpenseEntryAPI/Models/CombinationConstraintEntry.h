@@ -25,6 +25,7 @@
 * base rule
 */
 @property enum AllowEnum allow;
+@property NSString* allowString;
 
 /**
 * exceptions to the base rule

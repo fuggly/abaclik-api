@@ -17,6 +17,7 @@
 * TODO: Write general description for this method
 */
 @synthesize description;
+@synthesize comment;
 
 /**
 * TODO: Write general description for this method
@@ -124,6 +125,7 @@
 -(void)setTypeWithNSString:(NSString*) strValue
 {
     type = [TypeEnumHelper typeEnumFromString:(NSString*) strValue];
+  _typeString = strValue;
 }
 
 
@@ -144,6 +146,7 @@
 -(void)setFormatWithNSString:(NSString*) strValue
 {
     format = [FormatEnumHelper formatEnumFromString:(NSString*) strValue];
+  _formatString = strValue;
 }
 
 
@@ -157,7 +160,7 @@
     NSMutableDictionary* map = [[NSMutableDictionary alloc] init];
     [map addEntriesFromDictionary: @{
         @"type": @"type",
-        @"description": @"description",
+        @"description": @"comment",
         @"enum": @"enumType",
         @"nullable": @"isNullable",
         @"format": @"format",

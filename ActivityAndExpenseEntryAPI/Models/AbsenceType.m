@@ -46,6 +46,7 @@
 -(void)setInputFormatWithNSString:(NSString*) strValue
 {
     inputFormat = [InputFormatEnumHelper inputFormatEnumFromString:(NSString*) strValue];
+  _inputFormatString = strValue;
 }
 
 
@@ -66,6 +67,7 @@
 -(void)setSubTypeWithNSString:(NSString*) strValue
 {
     subType = [SubTypeEnumHelper subTypeEnumFromString:(NSString*) strValue];
+  _subTypeString = strValue;
 }
 
 

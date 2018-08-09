@@ -26,6 +26,7 @@
 * TODO: Write general description for this field
 */
 @property enum SeverityEnum severity;
+@property NSString* severityString;
 
 /**
 * TODO: Write general description for this field

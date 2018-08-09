@@ -65,6 +65,7 @@
 -(void)setStatusWithNSString:(NSString*) strValue
 {
     status = [EntryStatusEnumHelper entryStatusEnumFromString:(NSString*) strValue];
+  _statusString = strValue;
 }
 
 
