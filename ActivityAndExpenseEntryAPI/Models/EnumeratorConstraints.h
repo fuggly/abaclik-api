@@ -43,7 +43,7 @@
 /**
 * TODO: Write general description for this field
 */
-@property id<JSONSchema> entrySchemes;
+@property JSONSchema* entrySchemes;
 
 /**
 * maps another EnumerationType to a restriction rule

@@ -7,7 +7,7 @@
 #ifndef APIMATIC_ENUMERATIONTYPEENUM
 #define APIMATIC_ENUMERATIONTYPEENUM
 
-typedef NS_ENUM(NSUInteger, EnumerationTypeEnum)
+enum EnumerationTypeEnum
 {
         EnumerationTypeProject, //TODO: Write general description for this method
         EnumerationTypeWorkPackage, //TODO: Write general description for this method
