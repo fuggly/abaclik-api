@@ -14,6 +14,7 @@ enum CodeEnum
         CodeMin, //TODO: Write general description for this method
         CodeKm, //TODO: Write general description for this method
         Code1, //TODO: Write general description for this method
+        CodeCurrency, //TODO: Write general description for this method
 };
 
 #endif

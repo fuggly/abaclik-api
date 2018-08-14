@@ -110,12 +110,12 @@
 * schemes for individual properties
 */
 @property NSDictionary* properties;
+//@property NSDictionary<NSString*, JSONSchema*>* properties; // should be htis???
 
 /**
 * A listing of all properties which must be present (does not determine nullability)
 */
 @property NSArray* required;
-
 
 /**
 * Key mappings for the json serialization and deserialization

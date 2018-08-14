@@ -7,66 +7,70 @@
 #include "CodeEnumHelper.h"
 
 /**
-* Helper class implementation for CodeEnum to NSString conversion
-*/
+ * Helper class implementation for CodeEnum to NSString conversion
+ */
 @implementation CodeEnumHelper
 
 +(id) stringFromCodeEnum:(enum CodeEnum) codeEnum withDefault: (id) defaultValue
 {
-    switch(codeEnum)
-    {
-        case CodeD:
-            return @"d";
+  switch(codeEnum)
+  {
+    case CodeD:
+      return @"d";
+      
+    case CodeH:
+      return @"h";
+      
+    case CodeMin:
+      return @"min";
+      
+    case CodeKm:
+      return @"km";
+      
+    case Code1:
+      return @"1";
 
-        case CodeH:
-            return @"h";
+    case CodeCurrency:
+      return @"";
 
-        case CodeMin:
-            return @"min";
-
-        case CodeKm:
-            return @"km";
-
-        case Code1:
-            return @"1";
-
-        default:
-            return defaultValue;
-    }
+    default:
+      return defaultValue;
+  }
 }
 
 +(NSArray<NSString*>*) stringArrayFromCodeEnumArray:(NSArray<NSNumber*>*) array
 {
-    NSMutableArray* enums = [[NSMutableArray alloc]init]; 
-    for(NSNumber* numberValue in array){
-        NSNumber* stringValue = [CodeEnumHelper stringFromCodeEnum:(enum CodeEnum) numberValue.intValue withDefault:[NSNull null]];
-        [enums addObject:stringValue];
-    }
-    return [enums copy];
+  NSMutableArray* enums = [[NSMutableArray alloc]init];
+  for(NSNumber* numberValue in array){
+    NSNumber* stringValue = [CodeEnumHelper stringFromCodeEnum:(enum CodeEnum) numberValue.intValue withDefault:[NSNull null]];
+    [enums addObject:stringValue];
+  }
+  return [enums copy];
 }
 
 +(enum CodeEnum) codeEnumFromString:(NSString*) strValue
 {
-    NSArray* CodeEnumArray = [NSArray arrayWithObjects:
-                                        @"d",
-                                        @"h",
-                                        @"min",
-                                        @"km",
-                                        @"1",
-                                        nil];
-
-    return (enum CodeEnum) [CodeEnumArray indexOfObject: strValue];
+  NSArray* CodeEnumArray = [NSArray arrayWithObjects:
+                            @"d",
+                            @"h",
+                            @"min",
+                            @"km",
+                            @"1",
+                            @"",
+                            nil];
+  
+  return (enum CodeEnum) [CodeEnumArray indexOfObject: strValue];
 }
 
 
 +(NSArray<NSNumber*>*) codeEnumArrayFromStringArray:(NSArray<NSString*>*) array
 {
-    NSMutableArray* enums = [[NSMutableArray alloc]init]; 
-    for(NSString* enumValue in array){
-        NSNumber* numberValue = [NSNumber numberWithInt:[ CodeEnumHelper codeEnumFromString:enumValue]];
-        [enums addObject:numberValue];
-    }
-    return [enums copy];
+  NSMutableArray* enums = [[NSMutableArray alloc]init];
+  for(NSString* enumValue in array){
+    NSNumber* numberValue = [NSNumber numberWithInt:[ CodeEnumHelper codeEnumFromString:enumValue]];
+    [enums addObject:numberValue];
+  }
+  return [enums copy];
 }
 
 @end
