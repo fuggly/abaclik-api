@@ -15,9 +15,11 @@
 #import "AllowEnumHelper.h"
 
 
+
 //protocol defined for deserialization of JSON
 @protocol CombinationConstraintEntry
 @end
+
 
 @interface CombinationConstraintEntry : JSONModel
 

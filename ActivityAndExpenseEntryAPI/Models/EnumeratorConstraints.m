@@ -85,7 +85,7 @@
         @"enumeratorType": @"enumeratorType",
         @"enumeratorId": @"enumeratorId",
         @"assignableIn": @"assignableIn",
-        @"entrySchemes": @"entrySchemes",
+        @"entrySchemes": @"entrySchema",
         @"combinationConstraints": @"combinationConstraints"  
     }];
 

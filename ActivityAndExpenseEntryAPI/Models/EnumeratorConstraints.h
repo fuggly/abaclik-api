@@ -49,7 +49,7 @@
 /**
 * maps another EnumerationType to a restriction rule
 */
-@property id<CombinationConstraintEntry> combinationConstraints;
+@property NSDictionary<NSString*, JSONModel<CombinationConstraintEntry>*>* combinationConstraints;
 
 
 /**
