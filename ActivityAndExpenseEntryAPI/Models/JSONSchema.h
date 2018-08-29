@@ -27,7 +27,7 @@
 * TODO: Write general description for this field
 */
 @property enum TypeEnum type;
-@property NSString* typeString;
+@property NSString<Ignore>* typeString;
 
 /**
 * TODO: Write general description for this field
@@ -48,7 +48,7 @@
 * TODO: Write general description for this field
 */
 @property enum FormatEnum format;
-@property NSString* formatString;
+@property NSString<Ignore>* formatString;
 
 /**
 * TODO: Write general description for this field

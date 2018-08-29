@@ -47,7 +47,7 @@
 * TODO: Write general description for this field
 */
 @property enum EntryStatusEnum status;
-@property NSString* statusString;
+@property NSString<Ignore>* statusString;
 
 /**
 * TODO: Write general description for this field

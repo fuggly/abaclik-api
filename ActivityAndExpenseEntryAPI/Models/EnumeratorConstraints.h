@@ -29,7 +29,7 @@
 * TODO: Write general description for this field
 */
 @property enum EnumerationTypeEnum enumeratorType;
-@property NSString* enumeratorTypeString;
+@property NSString<Ignore>* enumeratorTypeString;
 
 /**
 * TODO: Write general description for this field

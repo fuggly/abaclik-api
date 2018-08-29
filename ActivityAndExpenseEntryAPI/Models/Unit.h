@@ -29,7 +29,7 @@
 * * EXAMPLES FOR SOME NON-UNITS
 */
 @property enum CodeEnum code;
-@property NSString* codeString;
+@property NSString<Ignore>* codeString;
 
 /**
 * TODO: Write general description for this field
