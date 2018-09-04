@@ -17,7 +17,7 @@
 @protocol Attachment
 @end
 
-@interface Attachment : JSONModel
+@interface Attachment : JSONModel <Attachment>
 
 /**
 * TODO: Write general description for this field

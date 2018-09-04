@@ -31,11 +31,6 @@
 /**
 * TODO: Write general description for this method
 */
-@synthesize secondaryLabel;
-
-/**
-* TODO: Write general description for this method
-*/
 @synthesize categoryLabel;
 
 
@@ -51,7 +46,6 @@
         @"label": @"label",
         @"customId": @"customId",
         @"type": @"type",
-        @"secondaryLabel": @"secondaryLabel",
         @"categoryLabel": @"categoryLabel"  
     }];
 
