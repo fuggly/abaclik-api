@@ -7,58 +7,70 @@
 #include "SubTypeEnumHelper.h"
 
 /**
-* Helper class implementation for SubTypeEnum to NSString conversion
-*/
+ * Helper class implementation for SubTypeEnum to NSString conversion
+ */
 @implementation SubTypeEnumHelper
 
 +(id) stringFromSubTypeEnum:(enum SubTypeEnum) subTypeEnum withDefault: (id) defaultValue
 {
-    switch(subTypeEnum)
-    {
-        case SubTypePause:
-            return @"pause";
-
-        case SubTypeVacation:
-            return @"vacation";
-
-        case SubTypeCompensation:
-            return @"compensation";
-
-        default:
-            return defaultValue;
-    }
+  switch(subTypeEnum)
+  {
+    case SubTypeOther:
+      return @"other";
+      
+    case SubTypeVacation:
+      return @"vacation";
+      
+    case SubTypeAccident:
+      return @"accident";
+      
+    case SubTypeMilitary:
+      return @"military";
+      
+    case SubTypeEducation:
+      return @"education";
+      
+    case SubTypeSickness:
+      return @"sickness";
+      
+    default:
+      return defaultValue;
+  }
 }
 
 +(NSArray<NSString*>*) stringArrayFromSubTypeEnumArray:(NSArray<NSNumber*>*) array
 {
-    NSMutableArray* enums = [[NSMutableArray alloc]init]; 
-    for(NSNumber* numberValue in array){
-        NSNumber* stringValue = [SubTypeEnumHelper stringFromSubTypeEnum:(enum SubTypeEnum) numberValue.intValue withDefault:[NSNull null]];
-        [enums addObject:stringValue];
-    }
-    return [enums copy];
+  NSMutableArray* enums = [[NSMutableArray alloc]init];
+  for(NSNumber* numberValue in array){
+    NSNumber* stringValue = [SubTypeEnumHelper stringFromSubTypeEnum:(enum SubTypeEnum) numberValue.intValue withDefault:[NSNull null]];
+    [enums addObject:stringValue];
+  }
+  return [enums copy];
 }
 
 +(enum SubTypeEnum) subTypeEnumFromString:(NSString*) strValue
 {
-    NSArray* SubTypeEnumArray = [NSArray arrayWithObjects:
-                                        @"pause",
-                                        @"vacation",
-                                        @"compensation",
-                                        nil];
-
-    return (enum SubTypeEnum) [SubTypeEnumArray indexOfObject: strValue];
+  NSArray* SubTypeEnumArray = [NSArray arrayWithObjects:
+                               @"vacation",
+                               @"sickness",
+                               @"military",
+                               @"accident",
+                               @"education",
+                               @"other",
+                               nil];
+  
+  return (enum SubTypeEnum) [SubTypeEnumArray indexOfObject: strValue];
 }
 
 
 +(NSArray<NSNumber*>*) subTypeEnumArrayFromStringArray:(NSArray<NSString*>*) array
 {
-    NSMutableArray* enums = [[NSMutableArray alloc]init]; 
-    for(NSString* enumValue in array){
-        NSNumber* numberValue = [NSNumber numberWithInt:[ SubTypeEnumHelper subTypeEnumFromString:enumValue]];
-        [enums addObject:numberValue];
-    }
-    return [enums copy];
+  NSMutableArray* enums = [[NSMutableArray alloc]init];
+  for(NSString* enumValue in array){
+    NSNumber* numberValue = [NSNumber numberWithInt:[ SubTypeEnumHelper subTypeEnumFromString:enumValue]];
+    [enums addObject:numberValue];
+  }
+  return [enums copy];
 }
 
 @end
