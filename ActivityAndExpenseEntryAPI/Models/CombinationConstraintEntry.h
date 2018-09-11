@@ -21,7 +21,7 @@
 @end
 
 
-@interface CombinationConstraintEntry : JSONModel
+@interface CombinationConstraintEntry : JSONModel <CombinationConstraintEntry>
 
 /**
 * base rule
