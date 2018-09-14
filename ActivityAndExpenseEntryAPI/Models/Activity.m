@@ -80,7 +80,7 @@
         @"start": @"startDate",
         @"end": @"endDate",
         @"date": @"date",
-        @"duration": @"duration",
+        @"quantity": @"quantity",
         @"project": @"project",
         @"workPackage": @"workPackage",
         @"activityType": @"activityType",

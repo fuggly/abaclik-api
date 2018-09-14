@@ -40,7 +40,7 @@
 /**
 * TODO: Write general description for this field
 */
-@property NSNumber* duration;
+@property NSNumber* quantity;
 
 /**
 * TODO: Write general description for this field
