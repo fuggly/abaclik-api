@@ -26,7 +26,7 @@
 /**
 * TODO: Write general description for this method
 */
-@synthesize duration;
+@synthesize quantity;
 
 /**
 * TODO: Write general description for this method
