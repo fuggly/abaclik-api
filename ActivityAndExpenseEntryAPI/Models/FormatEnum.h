@@ -9,6 +9,7 @@
  
 enum FormatEnum
 {
+  FormatUnknown,
         FormatDatetime, //TODO: Write general description for this method
         FormatDate, //TODO: Write general description for this method
         FormatTime, //TODO: Write general description for this method

@@ -15,6 +15,8 @@
 {
     switch(formatEnum)
     {
+      case FormatUnknown:
+        return nil;
         case FormatDatetime:
             return @"date-time";
 
@@ -41,7 +43,9 @@
 
 +(enum FormatEnum) formatEnumFromString:(NSString*) strValue
 {
+  strValue = nil == strValue ? @"" : strValue;
     NSArray* FormatEnumArray = [NSArray arrayWithObjects:
+                                @"",
                                         @"date-time",
                                         @"date",
                                         @"time",
