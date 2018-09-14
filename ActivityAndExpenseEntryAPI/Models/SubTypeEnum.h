@@ -6,12 +6,15 @@
 //
 #ifndef APIMATIC_SUBTYPEENUM
 #define APIMATIC_SUBTYPEENUM
- 
+
 enum SubTypeEnum
 {
-        SubTypePause, //TODO: Write general description for this method
-        SubTypeVacation, //TODO: Write general description for this method
-        SubTypeCompensation, //TODO: Write general description for this method
+  SubTypeVacation,
+  SubTypeSickness,
+  SubTypeMilitary,
+  SubTypeAccident,
+  SubTypeEducation,
+  SubTypeOther,
 };
 
 #endif

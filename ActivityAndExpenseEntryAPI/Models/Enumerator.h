@@ -42,11 +42,6 @@
 /**
 * TODO: Write general description for this field
 */
-@property NSString* secondaryLabel;
-
-/**
-* TODO: Write general description for this field
-*/
 @property NSString* categoryLabel;
 
 
