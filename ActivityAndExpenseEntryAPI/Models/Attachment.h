@@ -22,7 +22,7 @@
 /**
 * TODO: Write general description for this field
 */
-@property NSObject* identifier;
+@property NSString* identifier;
 
 /**
 * TODO: Write general description for this field
