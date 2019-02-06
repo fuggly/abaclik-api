@@ -27,6 +27,11 @@
 /**
 * TODO: Write general description for this field
 */
+@property NSString* vatNumber;
+
+/**
+* TODO: Write general description for this field
+*/
 @property NSString* firstname;
 
 /**

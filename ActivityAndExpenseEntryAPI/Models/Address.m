@@ -26,6 +26,11 @@
 /**
 * TODO: Write general description for this method
 */
+@synthesize vatNumber;
+
+/**
+* TODO: Write general description for this method
+*/
 @synthesize street;
 
 /**
@@ -86,6 +91,7 @@
         @"district": @"district",
         @"postcode": @"postcode",
         @"city": @"city",
+        @"vatNumber": @"vatNumber",
         @"state": @"state",
         @"country": @"country",
         @"countryCode": @"countryCode"  
